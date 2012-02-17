@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load markup %}
+
+{% block content %}
+  <div id="home">
+    <div id="pgContentWrap">
+      {% for article in articles %}
+        <div class='article'>
+          <h1>{{ article.title }}</h1>
+          <span>Published {{ article.created_at }} by {{ article.user.get_full_name }}</span>
+          {{ article.content|markdown }}
+        </div>
+      {% endfor %}
+    </div>
+    {% include '_sponsors.html' %}
+  </div>
+{% endblock content %}

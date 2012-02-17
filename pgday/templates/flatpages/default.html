@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+  <div id="static">
+    <div id="pgContentWrap">
+      {{ flatpage.content }}
+    </div>
+    {% include '_sponsors.html' %}
+  </div>
+{% endblock content %}
