@@ -8,7 +8,7 @@ _path = os.path.realpath(os.path.dirname(__file__))
 PROJECT_PATH = os.sep.join(_path.split(os.sep)[:-1])
 
 ADMINS = (
-    ('Jonathan S. Katz', 'jonathan.katz@excoventures.com'),
+    ('Adam Hubscher', 'ahbuscher@enova.com'),
 )
 
 MANAGERS = ADMINS
@@ -31,7 +31,7 @@ DATABASES = {
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/New_York'
+TIME_ZONE = 'America/Chicago'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
