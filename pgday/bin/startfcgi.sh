@@ -1,6 +1,6 @@
 #!/bin/sh
-app_path='/home/autinpug/pgday/public_html'
-p='/var/run/lighttpd/django-fastcgi.pid'
+app_path='/home/autinpug/pgday/public_html/app'
+p='/home/austinpug/pgday/run/django-fastcgi.pid'
 cd "$app_path"
 if [ -f $p ]; then
     kill $(cat -- $p)
