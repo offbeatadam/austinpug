@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'austinpug',                      # Or path to database file if using sqlite3.
         'USER': 'austinpug',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
@@ -123,7 +123,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    /home/austinpug/pgday/public_html/templates/',
+    '/home/austinpug/pgday/public_html/templates/',
 )
 
 INSTALLED_APPS = (

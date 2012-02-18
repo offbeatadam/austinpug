@@ -1,5 +1,5 @@
 #!/bin/sh
-app_path='/home/autinpug/pgday/public_html/app'
+app_path='/home/austinpug/pgday/public_html'
 p='/home/austinpug/pgday/run/django-fastcgi.pid'
 cd "$app_path"
 if [ -f $p ]; then
@@ -8,7 +8,7 @@ if [ -f $p ]; then
 fi
 
 exec /usr/bin/env \
-    PYTHONPATH="$app_path/.." python \
+    PYTHONPATH="$app_path" python \
     manage.py runfcgi \
     daemonize=false \
     method=prefork \
