@@ -6,6 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', 'app.core.views.home', name='home'),
+    url(r'^home/', 'app.core.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^registration/', 'app.core.views.registration', name='registration'),
     url(r'^speakers/', 'app.core.views.speakers', name='speakers'),
