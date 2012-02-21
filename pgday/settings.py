@@ -1,7 +1,7 @@
 # Django settings for austinpug project.
 import os
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 _path = os.path.realpath(os.path.dirname(__file__))
@@ -117,7 +117,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
-ROOT_URLCONF = 'austinpug.urls'
+ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

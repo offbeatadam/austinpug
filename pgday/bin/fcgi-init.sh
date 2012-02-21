@@ -19,7 +19,7 @@
 export PYTHONPATH=/home/austipug/pgday/public_html
 DJANGO_SITES="austinpug"
 SITES_PATH=/home/austinpug/pgday/public_html
-RUNFILES_PATH=$SITES_PATH/run
+RUNFILES_PATH=/home/austinpug/pgday/run
 HOST=127.0.0.1
 PORT_START=3033
 RUN_AS=www-data
@@ -50,7 +50,6 @@ d_start()
             host=$HOST port=$PORT pidfile=$RUNFILES_PATH/$SITE.pid --pidfile $RUNFILES_PATH/$SITE.pid
             chmod 400 $RUNFILES_PATH/$SITE.pid
         fi
-        let "PORT = $PORT + 1"
     done
 }
 
