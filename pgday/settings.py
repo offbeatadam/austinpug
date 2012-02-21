@@ -154,7 +154,7 @@ LOGGING = {
     'handlers': {
         'file': {
             'level': 'ERROR',
-            'class': 'logging.FileHandler'
+            'class': 'logging.FileHandler',
             'filename': '/home/austinpug/gpday/public_html/log/error.log'
         }
     },
