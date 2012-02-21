@@ -11,6 +11,7 @@ ADMINS = (
     ('Adam Hubscher', 'ahbuscher@enova.com'),
 )
 
+FORCE_SCRIPT_NAME = ''
 MANAGERS = ADMINS
 
 DATABASES = {
