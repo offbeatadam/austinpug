@@ -152,14 +152,15 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'mail_admins': {
+        'file': {
             'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler'
+            'class': 'logging.FileHandler'
+            'filename': '/home/austinpug/gpday/public_html/log/error.log'
         }
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
+            'handlers': ['file'],
             'level': 'ERROR',
             'propagate': True,
         },
