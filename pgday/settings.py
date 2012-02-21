@@ -153,15 +153,15 @@ LOGGING = {
     'disable_existing_loggers': False,
     'handlers': {
         'file': {
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/austinpug/gpday/public_html/log/error.log'
+            'filename': '/home/austinpug/pgday/public_html/log/error.log'
         }
     },
     'loggers': {
         'django.request': {
             'handlers': ['file'],
-            'level': 'ERROR',
+            'level': 'DEBUG',
             'propagate': True,
         },
     }
