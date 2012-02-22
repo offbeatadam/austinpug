@@ -8,7 +8,7 @@
         <div class='article'>
           <h1>{{ article.title }}</h1>
           <span>Published {{ article.created_at }} by {{ article.user.get_full_name }}</span>
-          {{ article.content|html }}
+          {{ article.content|markdown }}
         </div>
       {% endfor %}
     </div>
