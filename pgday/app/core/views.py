@@ -20,6 +20,9 @@ def home(request):
 def registration(request):
     return render_to_response('registration.html', {}, RequestContext(request))
 
+def conact(request):
+    return render_to_response('contact.html', {}, RequestContext(request))
+
 def speakers(request):
     message = None
     if request.POST:
