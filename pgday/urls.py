@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     url(r'^registration/', 'app.core.views.registration', name='registration'),
     url(r'^speakers/', 'app.core.views.speakers', name='speakers'),
     url(r'^tinymce/', include('tinymce.urls')),
-    url(r'^conact/', 'app.core.views.contact', name='contact')
+    url(r'^contact/', 'app.core.views.contact', name='contact')
 )
 
 if settings.DEBUG:
