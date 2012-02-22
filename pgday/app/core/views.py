@@ -20,7 +20,7 @@ def home(request):
 def registration(request):
     return render_to_response('registration.html', {}, RequestContext(request))
 
-def conact(request):
+def contact(request):
     return render_to_response('contact.html', {}, RequestContext(request))
 
 def speakers(request):
