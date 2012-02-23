@@ -3,67 +3,28 @@
 {% block content %}
   <div id="speakers">
     <div id="pgContentWrap">
-      <h1>Speakers</h1>
-      <p>We are currently looking for speakers for PGDay Austin 2012 on March 28th, 2012!  Our call for proposals is open until February 27th, 2012.  We will have notified all speakers by March 2nd, 2012.</p>
-      <p>We want you to share your experiences using PostgreSQL - your uses cases, experiences, deployment strategies, tools you've used in and around PostgreSQL - anything that you feel you would like to highlight to the PostgreSQL community!</p>
-      <p>
-        Some topics to consider:
-        <ul>
-          <li>Developing applications for PostgreSQL</li>
-          <li>Administering large scale PostgreSQL installations</li>
-          <li>Case studies of PostgreSQL deployments</li>
-          <li>PostgreSQL tools and utilities</li>
-          <li>Location-aware applications with PostGIS</li>
-          <li>Integration with other databases</li>
-          <li>Performance Tuning</li>
-          <li>Migrating from other systems</li>
-          <li>Scaling/replication</li>
-          <li>Deployment of PostgreSQL from a business perspective</li>
-        </ul>
-      </p>
-      <p>
-        We will be receiving proposals for 40 minute talks and 20 minute talks.  You may submit as many proposals as you would like using the form below!
-      </p>
-      <hr />
-      {% if message %}
-        <p style='color:green'>
-          Thank you for your submission.  We will let you know in the near future if you will be speaking at PGDay NYC 2012!
-        </p>
-      {% endif %}
-      {% if form.errors %}
-        <p style='color:red'>
-          There were some errors with your submission, please correct them below:
-          {{ form.errors }}
-        </p>
-      {% endif %}
-      <form action="{% url speakers %}" method="POST">
-        {% csrf_token %}
-        <p>
-          {{ form.name.label_tag }}
-          {{ form.name }}
-        </p>
-        <p>
-          {{ form.email.label_tag }}
-          {{ form.email }}
-        </p>
-        <p>
-          {{ form.proposal_name.label_tag }}
-          {{ form.proposal_name }}
-        </p>
-        <p>
-          {{ form.proposal_length.label_tag }}
-          {{ form.proposal_length }}
-        </p>
-        <p>
-          {{ form.description.label_tag }}
-          {{ form.description }}
-        </p>
-        <p>
-          {{ form.other.label_tag }}
-          {{ form.other }}
-        </p>
-        <input type='submit' name='submit' value='Submit Proposal' />
-      </form>
+      <h1>Speaker Bios</h1>
+      <p>We are pleased to welcome the following speakers for PG Day Austin 2012</p>
+      
+      <h2>Josh Berkus</h2><br /><br />
+      <p>Josh Berkus is a member of the Core Team of PostgreSQL.</p>
+      <p>He is also president of PostgreSQL Experts Inc., and consults on database performance, scalability architecture, data warehousing, and open source community management. In addition to PostgreSQL, he is involved with CouchDB, Redis, Hadoop, Drizzle, and many open source projects. Josh is also a potter and amateur chef.</p><br /><br />
+      
+      <h2>Magnus Hagander</h2><br /><br />
+      <p>Magnus Hagander is a developer and a committer in the PostgreSQL Global Development Group.</p>
+      <p>Magnus is one of the original developers of the Windows port of PostgreSQL, and currently a part of the team that maintains it. These days, he mostly works on other parts of the PostgreSQL backend, recently with a focus on security features such as authentication and encryption.</p>
+      <p>He is also one of the core members of the postgresql.org infrastructure team, maintaining the servers that power the project, and one of the maintainers of the postgresql.org website. He also contributes to pgAdmin and other related projects.</p>
+      <p>He's been a PostgreSQL user since version 6 (with some non-serious use of Postgres 95 before that), and currently serves as President of the Board for PostgreSQL Europe.</p>
+      <p>To pay the bills, he is a PostgreSQL and open source software consultant at Redpill Linpro in Stockholm, Sweden, where he works on consulting, support and training services, as well as custom development work.</p><br /><br />
+
+      <h2>Bruce Momjian</h2><br /><br />
+      <p>Bruce Momjian is a co-founder of the PostgreSQL Global Development Group, and has worked on PostgreSQL since 1996. He is the author of PostgreSQL: Introduction and Concepts, published by Addison-Wesley. Bruce is employed by EnterpriseDB.</p>
+      <p>Previously, he was employed by SRA Japan and Great Bridge LLC, both PostgreSQL support companies. He has spoken at many international open-source conferences. Prior to his involvement with PostgreSQL, Bruce worked as a consultant, developing custom database applications for some of the world's largest law firms. As an academic, Bruce was a high school computer science teacher for five years, holds a Masters in Education, and is an adjunct professor at Drexel University.</p><br /><br />
+
+      <h2>Greg Smith</h2><br /><br />
+      <p>Greg Smith leads the US-based work for international PostgreSQL services firm 2ndQuadrant. He's the author of "PostgreSQL 9.0 High Performance", available from Packt Publishing.<p>
+      <p>His past work on PostgreSQL includes rewriting the database's background writer, releasing its first open-source tuning configuration tool, and introducing the first tools featuring transaction latency graphing as a technique for analyzing performance over time.</p>
+      
     </div>
     {% include '_sponsors.html' %}
   </div>

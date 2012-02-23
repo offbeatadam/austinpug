@@ -32,21 +32,8 @@ def contact(request):
     return render_to_response('contact.html', {'conference': conference}, RequestContext(request))
 
 def speakers(request):
-    message = None
-    if request.POST:
-        form = ProposalForm(request.POST)
-        if form.is_valid():
-            form.save()
-            message = 'Thank you for your submission!  You may make more submissions using the form below.'
-            form = ProposalForm(
-                initial={
-                    'name': form.cleaned_data.get('name'),
-                    'email': form.cleaned_data.get('email'),
-                }
-            )
-    else:
-        form = ProposalForm()
-    return render_to_response('speakers.html', {
-        'form': form,
-        'message': message,
-    }, RequestContext(request))
+    try:
+        conference = Conference.objects.filter(active=True).order_by('start_date').all()[0]
+    except IndexError:
+        conference = None
+    return render_to_response('speakers.html', {'conference': conference}, RequestContext(request))
