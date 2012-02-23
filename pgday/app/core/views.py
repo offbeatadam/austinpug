@@ -18,7 +18,11 @@ def home(request):
     }, RequestContext(request))
 
 def registration(request):
-    return render_to_response('registration.html', {}, RequestContext(request))
+    try:
+        conference = Conference.objects.filter(active=True).order_by('start_date').all()[0]
+    except IndexError:
+        conference = None
+    return render_to_response('registration.html', {'conference': conference}, RequestContext(request))
 
 def contact(request):
     return render_to_response('contact.html', {}, RequestContext(request))
