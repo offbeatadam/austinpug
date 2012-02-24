@@ -382,6 +382,9 @@ img.pgArrowImage {
   float: left;
   width: 200px;
   margin-left: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #pgContentWrap {
