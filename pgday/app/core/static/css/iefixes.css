@@ -136,3 +136,9 @@
 /*Win IE fix \*/
 * html #txtArchives pre { font-size: 100%; }
 /*End Win IE fix*/
+
+
+.wraptocenter span {
+    display: inline-block;
+    height: 100%;
+}
