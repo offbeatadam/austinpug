@@ -82,24 +82,3 @@ pre {
 strong, b {
   font-weight: bold;
 }
-.wraptocenter {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    width: ...;
-    height: ...;
-}
-.wraptocenter * {
-    vertical-align: middle;
-}
-/*\*//*/
-.wraptocenter {
-    display: block;
-}
-.wraptocenter span {
-    display: inline-block;
-    height: 100%;
-    width: 1px;
-}
-/**/
-
