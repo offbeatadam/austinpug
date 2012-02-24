@@ -1,6 +1,6 @@
 DATABASE_NAME = 'austinpug'
 DATABASE_USER = 'austinpug'
-DATABASE_PASSWORD = ''
+DATABASE_PASSWORD = 'PEbadAb7ayuM8fa28aDUr6'
 DATABASE_ENGINE = 'postgresql_psycopg2'
 DATABASE_HOST = 'localhost'
 DATABASE_PORT = ''

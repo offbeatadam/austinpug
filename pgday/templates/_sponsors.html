@@ -25,16 +25,12 @@
     </div>
   </div>
   <h1>Sponsors</h1>
-  <p>
     <a href="http://www.enterprisedb.com">
       <img src="http://pgday.austinpug.org/static/images/edb.jpg" />
     </a>
-  </p>
-  <p>
     <a href="http://www.2ndquadrant.com">
       <img src="http://pgday.austinpug.org/static/images/2ndquad.png" />
     </a>
-  </p>
   {% if sponsors %}
     {% regroup sponsors by category as sponsor_list %}
     {% for category in sponsor_list %}
